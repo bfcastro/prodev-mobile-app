@@ -1,48 +1,127 @@
 import { StyleSheet } from "react-native";
 
-export const joinStyles = StyleSheet.create({
+const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: "#fff",
-    paddingHorizontal: 20,
-    paddingVertical: 30,
-    justifyContent: "center",
+    paddingHorizontal: 20
   },
-  header: {
-    fontSize: 28,
-    fontWeight: "700",
-    color: "#111",
-    marginBottom: 25,
-    textAlign: "center",
+  iconsection: {
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    alignItems: 'center',
+    marginTop: 22
   },
-  input: {
-    borderWidth: 1,
-    borderColor: "#ccc",
+  titleTextGroup: {
+    marginTop: 20
+  },
+  titleText: {
+    fontWeight: 700,
+    fontSize: 39,
+  },
+  subText: {
+    fontWeight: 400,
+    fontSize: 12,
+    color: '#7E7B7B'
+  },
+  formGroup: {
+    marginTop: 44,
+    rowGap: 10
+  },
+  formLabel: {
+    fontSize: 18,
+    fontWeight: 400,
+    color: '#7B7B7B',
+    marginBottom: 7
+  },
+  formControl: {
+    borderWidth: 2,
+    height: 50,
     borderRadius: 10,
-    padding: 12,
-    marginBottom: 15,
-    fontSize: 16,
+    borderColor: '#E9E9E9',
+    paddingHorizontal: 10
   },
-  button: {
-    backgroundColor: "#007AFF",
+  formPasswordControl: {
+    borderWidth: 2,
+    height: 50,
     borderRadius: 10,
-    paddingVertical: 14,
-    alignItems: "center",
-    marginTop: 10,
+    borderColor: '#E9E9E9',
+    paddingHorizontal: 10,
+    flexDirection: 'row',
+    alignItems: 'center'
+  },
+  passwordControl: {
+    flex: 1
+  },
+  primaryButton: {
+    backgroundColor: '#34967C',
+    height: 53,
+    borderRadius: 10,
+    justifyContent: 'center',
+    alignItems: 'center',
+    marginTop: 25
   },
   buttonText: {
-    color: "#fff",
-    fontSize: 16,
-    fontWeight: "600",
+    color: 'white',
+    fontSize: 17,
+    fontWeight: 300
   },
-  footerText: {
-    textAlign: "center",
-    marginTop: 20,
-    fontSize: 14,
-    color: "#555",
+  secondaryButtonGroup: {
+    rowGap: 15,
+    marginTop: 15,
   },
-  link: {
-    color: "#007AFF",
-    fontWeight: "600",
+  secondaryButton: {
+    height: 53,
+    borderRadius: 10,
+    justifyContent: 'center',
+    alignItems: 'center',
+    flexDirection: 'row',
+    columnGap: 10,
+    borderWidth: 1,
   },
+  secondaryButtonText: {
+    fontSize: 18,
+    fontWeight: 400
+  },
+  signupgroup: {
+    flexDirection: 'row',
+    justifyContent: 'center',
+    position: 'absolute',
+    left: 77, 
+    right: 76,
+    bottom: 33
+  },
+  signupTitleText: {
+    fontSize: 18,
+    fontWeight: 400
+  },
+  signupSubTitleText: {
+    fontSize: 18,
+    fontWeight: 600,
+    color: '#FFA800'
+  },
+  dividerGroup: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    columnGap: 10,
+    marginBottom: 25,
+    marginTop: 29,
+  },
+  divider: {
+    borderWidth: 1,
+    flex: 1,
+    borderColor: '#e6e6e6'
+  },
+  dividerText: {
+    fontSize: 17,
+    fontWeight: 500,
+    fontVariant: ['small-caps'],
+    color: '#C2C2C2'
+  },
+  forgotPasswordText: {
+    textAlign: 'right',
+    color: '#34967C',
+    marginTop: 9,
+  }
 });
+
+export { styles }

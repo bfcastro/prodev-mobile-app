@@ -1,0 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom global styles can go here */
+:root {
+  --color-primary: #34967C;
+  --color-secondary: #0601B4;
+}
